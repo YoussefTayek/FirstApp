@@ -1,0 +1,11 @@
+<div class="p-3">
+  <ul class="nav nav-pills">
+    <li>
+      <button (click)="gotoHome()" [ngClass]="currentRoute=='home'?'btn btn-primary':'btn btn-outline-primary'"  >Home</button>
+    </li>
+    <li>
+      <button (click)="gotoProducts()" [ngClass]="currentRoute=='products'?'btn btn-primary ms-2':'btn btn-outline-primary ms-2'" >Products</button>
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
